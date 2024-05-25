@@ -1,4 +1,4 @@
-# Actividad aplicación - Blog
+# Aplicación - Blog
 
 
 Este repositorio contiene un proyecto de sistema de Blog Básico con EJS. Objetivo, aprender y practicar el uso de EJS para la generación dinámica de contenido web, así como desarrollar habilidades en el manejo de Express y la integración con una base de datos.
