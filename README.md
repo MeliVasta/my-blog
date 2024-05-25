@@ -37,7 +37,7 @@ Este repositorio contiene un proyecto de sistema de Blog Básico con EJS. Objeti
 
 ## Vistas utilizadas:
 
-- Utilizando la herramienta Resposively App las siguientes vistas: MacBook Pro (1140x900), iPad Pro (1024x1366), LaptopWith Touch (950x1280), iPad (768x1024), Nexus 7 (600x960) e iPhone 12 Pro (390x844).
+- Utilizando la herramienta Resposively App las siguientes vistas: MacBook Pro (1140x900), LaptopWith Touch (950x1280), iPad (768x1024) e iPhone 12 Pro (390x844).
 
 
 
