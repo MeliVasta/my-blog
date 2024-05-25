@@ -35,6 +35,14 @@ Este repositorio contiene un proyecto de sistema de Blog Básico con EJS. Objeti
 - ¡Y a disfrutarlo!
 
 
+## Tecnologías Utilizadas
+
+- HTML
+- CSS
+- Javascript
+- Node.js
+- MySQL
+
 ## Vistas utilizadas:
 
 - Utilizando la herramienta Resposively App las siguientes vistas: MacBook Pro (1140x900), LaptopWith Touch (950x1280), iPad (768x1024) e iPhone 12 Pro (390x844).
