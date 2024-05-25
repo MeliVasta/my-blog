@@ -1,0 +1,63 @@
+.edit-post{
+    display: flex;
+justify-content: center;
+align-content: center;
+flex-direction: column;
+text-align: center;
+color: var(--colorfuente);
+}
+
+.edit-post-titulo{
+    font-size: 300%;
+    margin: 2% 0%;
+}.edit-post{
+    display: flex;
+justify-content: center;
+align-content: center;
+flex-direction: column;
+text-align: center;
+color: var(--colorfuente);
+}
+
+.edit-post-titulo{
+    font-size: 300%;
+    margin: 2% 0%;
+}
+
+/* estilos del form en el archivo add-post.css */
+
+
+/* media queries */
+
+@media screen and (max-width: 769px) {
+    .edit-post-titulo{
+        font-size: 250%;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .edit-post-titulo{
+        font-size: 140%;
+        line-height: 130%;
+        margin: 4% 1%;
+    }
+}
+
+/* estilos del form en el archivo add-post.css */
+
+
+/* media queries */
+
+@media screen and (max-width: 769px) {
+    .edit-post-titulo{
+        font-size: 250%;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .edit-post-titulo{
+        font-size: 140%;
+        line-height: 130%;
+        margin: 4% 1%;
+    }
+}

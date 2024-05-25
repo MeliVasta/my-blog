@@ -1,0 +1,144 @@
+/* Estilos del header */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: var(--degrade);
+    padding: 1%;
+    color: var(--colorfuente);
+}
+
+.session{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.session img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+a{
+    color: var(--colorfuente);
+    text-decoration: none;
+}
+
+.logo h1{
+    font-size: 70px;
+}
+
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 0px 70px;
+}
+
+.btn-add {
+    border: none;
+    background-color: var(--colorfondobotones);
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 110%;
+    font-weight: 600;
+    box-shadow: 0px 0px 7px rgb(234, 234, 234);
+}
+
+.btn-add a{
+    color: var(--colorfuente);
+        text-decoration: none;
+}
+
+
+
+/* media querie */
+
+@media screen and (max-width: 1025px) {
+    .session img{
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .header-right {
+        margin: 0px 50px;
+    }
+
+    .btn-add {
+        padding: 20px;
+        font-size: 100%;
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .session{
+        gap: 3px;
+    }
+
+    .session img{
+        max-width: 70px;
+        max-height: 70px;
+    }
+
+
+    .session h2{
+        font-size: 120%;
+    }
+
+    .logo h1{
+        font-size: 50px;
+    }
+    
+    .header-right {
+        margin: 0px 30px;
+    }
+
+    .btn-add {
+        padding: 15px;
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .session{
+        gap: 2px;
+    }
+
+    .session img{
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .logo h1{
+        font-size: 60px;
+        text-align: center;
+
+    }
+
+    .header-right {
+        gap: 30px;
+        margin: 10px 0px;
+    }
+
+    .btn-add {
+        padding: 13px;
+        font-size: 90%;
+    }
+}

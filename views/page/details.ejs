@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title>MyBlog - Details</title>
+</head>
+
+<body>
+    <%- include('header') %>
+
+    <section class="seccion-detalle">
+        <div class="post-detalle">
+            <h3 class="post-titulo-detalle"><%= post.titulo %></h3>
+            <div class="barra-divisora"></div>
+            <p class="contenido-post-detalle"><%= post.contenido %></p>
+            <% const fecha = new Date(post.fecha); %>
+            <p class="fecha-post">Fecha de publicación: <%= fecha.toLocaleString() %></p>
+            <div class="botones-detalle">
+                <button id="deleteButton" data-id="<%= post.id %>" class="btn">Eliminar</button>
+                <button id="editButton" class="btn"><a href="/edit-post/<%= post.id %>">Editar</a></button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('deleteButton').addEventListener('click', function () {
+            const id = this.getAttribute('data-id');
+            fetch('/eliminar/' + id, {
+                    method: 'DELETE'
+                })
+                .then(response => {
+                    if (response.ok) {
+                        window.location.href =
+                            '/index'; // Redirigir a la página principal o a donde desees después de eliminar
+                    } else {
+                        console.error('Error al eliminar el blog');
+                    }
+                })
+                .catch(error => console.error('Error en la solicitud fetch:', error));
+        });
+    </script>
+</body>
+
+</html>

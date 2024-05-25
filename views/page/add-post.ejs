@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link al CSS -->
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title>MyBlog - Agregar</title>
+</head>
+
+<body>
+    <%- include('header') %>
+    <hr>
+    <section class="add-post">
+        <h2 class="add-post-titulo">Agrega una nueva publicación</h2>
+        <div class="form-container">
+            <form action="" method="post" class="form">
+                <label for="titulo" class="titulo-form">Título:</label>
+                <input type="text" name="titulo" required placeholder="Ingrese el título..." class="input-form">
+                <label for="contenido" class="titulo-form">Contenido:</label>
+                <input type="textarea" name="contenido" required
+                    placeholder="Comience a escribir su publicación aquí..." class="input-form-textarea">
+                <button class="btn">Agregar post</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
